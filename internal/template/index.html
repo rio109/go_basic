@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Time Service</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>World Time Service</h1>
+    </header>
+    <main>
+        <section class="current-time">
+            <h2>Get Your Current Time</h2>
+            <form id="current-time-form">
+                <label for="timezone">Timezone:</label>
+                <input type="text" id="timezone" name="timezone" placeholder="e.g., Asia/Seoul">
+                <button type="submit">Get Time</button>
+            </form>
+            <div id="current-time-result" class="result"></div>
+        </section>
+
+        <section class="world-times">
+            <h2>World Times</h2>
+            <button id="load-world-times">Load World Times</button>
+            <div id="world-times-result" class="result grid-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 World Time Service</p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
